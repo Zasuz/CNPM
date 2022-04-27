@@ -61,6 +61,8 @@ public class SanPhamAdd extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        sanPhamAddBackground1.setBackground(new java.awt.Color(246, 158, 24));
+
         javax.swing.GroupLayout imagePanel1Layout = new javax.swing.GroupLayout(imagePanel1);
         imagePanel1.setLayout(imagePanel1Layout);
         imagePanel1Layout.setHorizontalGroup(
