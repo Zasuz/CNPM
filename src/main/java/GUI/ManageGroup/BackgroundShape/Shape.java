@@ -13,25 +13,35 @@ import java.awt.Graphics2D;
  * @author ACER
  */
 public class Shape extends javax.swing.JPanel {
-
-    /**
-     * Creates new form Shape
-     */
+    private int radi = 50;
+ {
+             setOpaque(false);
+ }
+ 
+ 
     public Shape() {
         initComponents();
     }
+
+    public int getRadi() {
+        return radi;
+    }
+
+    public void setRadi(int radi) {
+        this.radi = radi;
+    }
+    
 
     protected void paintComponent(Graphics g){
         Graphics2D g2d = (Graphics2D) g.create();
         Color xanh = Color.decode("#66D9FF");
        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
         g2d.setColor(xanh);
-        g2d.fillRoundRect(0, 0, getWidth(), getHeight(), 80, 80);
+        g2d.fillRoundRect(0, 0, getWidth(), getHeight(), radi, radi);
         g2d.dispose();
         super.paintComponent(g);
         
    
-        setOpaque(false);
     
     }
     @SuppressWarnings("unchecked")

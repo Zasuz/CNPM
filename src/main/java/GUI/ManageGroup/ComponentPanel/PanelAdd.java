@@ -26,7 +26,7 @@ public class PanelAdd extends javax.swing.JPanel {
 protected void paintComponent(Graphics g){
          setSize(858, 191);
         Graphics2D g2d = (Graphics2D) g.create();
-        Color xanh = Color.decode("#66D9FF");
+        Color xanh = Color.decode("#2B85A1");
         Color xanhnhat = Color.decode("#D3F5FF");
 
         
