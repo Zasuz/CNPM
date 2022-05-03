@@ -34,7 +34,11 @@ public class GiamGiaSPDAO extends AbtractAccessDatabase<GiamGiaSP> implements IS
 
     @Override
     public List<GiamGiaSP> selectAll() {
-        return executeQueryList("SELECT * FROM GIAMGIASP");
+        return executeQueryList("SELECT * FROM GIAMGIASP WHERE IS_DELETED = 0");
+    }
+    
+    public GiamGiaSP selectByMaSP(Integer maSP){
+        return executeQuery("SELECT * FROM GIAMGIASP WHERE MASP = ? AND IS_DELETED = 0", maSP);
     }
 
     

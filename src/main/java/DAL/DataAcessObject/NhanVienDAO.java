@@ -33,6 +33,6 @@ public class NhanVienDAO extends AbtractAccessDatabase<NhanVien> implements ISim
 
     @Override
     public List<NhanVien> selectAll() {
-        return null;
+        return executeQueryList("SELECT * FROM NHANVIEN WHERE IS_DELETED = 0");
     }
 }
