@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package GUI.ManageGroup.ManageItem.FrameAdd;
+package GUI.ManageGroup.ManageItem.FrameAdd.FrameAdd;
 
+import GUI.ManageGroup.ManageItem.FrameAdd.FrameAdd.NhapHangSanPham;
 import com.formdev.flatlaf.FlatLightLaf;
 
 /**
