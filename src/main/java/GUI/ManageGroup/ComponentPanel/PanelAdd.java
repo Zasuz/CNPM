@@ -20,26 +20,29 @@ public class PanelAdd extends javax.swing.JPanel {
     public PanelAdd() {
         initComponents();
     }
-    {
-              setOpaque(false);
-    }
-protected void paintComponent(Graphics g){
-         setSize(858, 191);
-        Graphics2D g2d = (Graphics2D) g.create();
-        Color xanh = Color.decode("#2B85A1");
-        Color xanhnhat = Color.decode("#D3F5FF");
 
-        
+    {
+        setOpaque(false);
+    }
+
+    protected void paintComponent(Graphics g) {
+
+        Graphics2D g2d = (Graphics2D) g.create();
+        Color xanh = Color.decode("#7EBBDE");
+//        Color xanhnhat = Color.decode("#D3F5FF");
         g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
-         g2d.setColor(xanhnhat);
-        g2d.fillRoundRect(getWidth()/7, 0, getWidth()-getWidth()/7, getHeight(), 80, 80);
         g2d.setColor(xanh);
-        g2d.fillRoundRect(0, 0, getWidth()/5, getHeight(), 80, 80);
-   
+        g2d.fillRoundRect(getWidth() / 7, 0, getWidth() - getWidth() / 7, getHeight(), 100, 100);
+        g2d.setColor(xanh);
+        g2d.fillRoundRect(0, 0, getWidth() / 5, getHeight() - 5, 100, 100);
+        g2d.setColor(Color.decode("#FFFFFF"));
+        g2d.fillRoundRect(2, 2, getWidth() / 5 - 4, getHeight() - 5 - 4, 100, 100);
+        
         g2d.dispose();
         super.paintComponent(g);
-  
+
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -48,11 +51,11 @@ protected void paintComponent(Graphics g){
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 940, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 240, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 

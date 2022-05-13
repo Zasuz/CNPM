@@ -27,194 +27,19 @@ public class PanelVoucher extends javax.swing.JPanel {
     private void initComponents() {
 
         shape1 = new GUI.ManageGroup.ManageItem.FrameAdd.ComponentFrameAdd.Shape();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        Phầntramgiam = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
 
-        shape1.setBackground(new java.awt.Color(211, 245, 255));
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Tên Voucher :");
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("Số Voucher");
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("Ngày bắt đầu :");
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setText("Ngày kết thúc :");
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setText("Giá trị tối thiểu :");
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel6.setText("Khuyến mãi tối thiểu :");
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel7.setText("Khuyến mãi tối đa :");
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel8.setText("% Giảm :");
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel9.setText("Số lượt :");
-
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel10.setText("Mã voucher");
-
-        jTextArea1.setBackground(new java.awt.Color(211, 245, 255));
-        jTextArea1.setColumns(20);
-        jTextArea1.setLineWrap(true);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Mô tả\n");
-        jTextArea1.setWrapStyleWord(true);
-        jTextArea1.setEnabled(false);
-        jTextArea1.setFocusable(false);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        jLabel11.setText("getten");
-
-        jLabel12.setText("getgiatritoithieu");
-
-        jLabel13.setText("Khuyến mãi tối đa\n");
-
-        jLabel14.setText("jLabel14");
-
-        Phầntramgiam.setText("%Giảm\n");
-
-        jLabel16.setText("jLabel16");
-
-        jLabel17.setText("Khuyến mãi tối thiểu\n");
-
-        jLabel18.setText("jLabel18");
+        shape1.setBackground(new java.awt.Color(43, 133, 161));
+        shape1.setOpaque(false);
 
         javax.swing.GroupLayout shape1Layout = new javax.swing.GroupLayout(shape1);
         shape1.setLayout(shape1Layout);
         shape1Layout.setHorizontalGroup(
             shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(shape1Layout.createSequentialGroup()
-                .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(shape1Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, shape1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel10)
-                        .addGap(92, 92, 92)))
-                .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(shape1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel14)
-                        .addGap(119, 119, 119)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel18))
-                    .addGroup(shape1Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel13))
-                    .addGroup(shape1Layout.createSequentialGroup()
-                        .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(shape1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel8))
-                            .addGroup(shape1Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel12)
-                                .addGap(71, 71, 71)
-                                .addComponent(jLabel9)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel16)
-                            .addComponent(Phầntramgiam)))
-                    .addGroup(shape1Layout.createSequentialGroup()
-                        .addGap(139, 139, 139)
-                        .addComponent(jLabel2))
-                    .addGroup(shape1Layout.createSequentialGroup()
-                        .addGap(280, 280, 280)
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel17)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 878, Short.MAX_VALUE)
         );
         shape1Layout.setVerticalGroup(
             shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(shape1Layout.createSequentialGroup()
-                .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(shape1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel8)
-                                .addComponent(Phầntramgiam))
-                            .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel11)
-                                .addComponent(jLabel1)))
-                        .addGap(23, 23, 23)
-                        .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel16))
-                        .addGap(18, 18, 18)
-                        .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel17))
-                        .addGap(18, 18, 18))
-                    .addGroup(shape1Layout.createSequentialGroup()
-                        .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(shape1Layout.createSequentialGroup()
-                                .addContainerGap(34, Short.MAX_VALUE)
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                            .addGroup(shape1Layout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)))
-                .addGroup(shape1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel18))
-                .addContainerGap(12, Short.MAX_VALUE))
+            .addGap(0, 214, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -231,26 +56,6 @@ public class PanelVoucher extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Phầntramgiam;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private GUI.ManageGroup.ManageItem.FrameAdd.ComponentFrameAdd.Shape shape1;
     // End of variables declaration//GEN-END:variables
 }
