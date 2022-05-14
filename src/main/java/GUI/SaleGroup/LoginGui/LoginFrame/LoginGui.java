@@ -56,7 +56,6 @@ public class LoginGui extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1080, 626));
 
         backGroundLoginGui1.setBackground(new java.awt.Color(98, 196, 195));
 
@@ -204,7 +203,7 @@ public class LoginGui extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel7.setText("Duy, Tuấn, Lâm, Phúc, Đạt");
+        jLabel7.setText("Duy, Phúc, Lâm, Tuấn, Đạt");
 
         jLabel8.setBackground(new java.awt.Color(102, 102, 102));
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N

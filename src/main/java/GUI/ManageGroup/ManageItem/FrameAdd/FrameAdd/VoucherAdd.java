@@ -1,7 +1,12 @@
 
 package GUI.ManageGroup.ManageItem.FrameAdd.FrameAdd;
 
+import BUS.SaleServices.CheckInfoSale;
+import BUS.VoucherHandle.VoucherValidate;
+import DAL.DataModels.Voucher;
 import GUI.ManageGroup.ManageItem.FrameAdd.FrameAdd.VoucherAdd;
+import java.math.BigInteger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -49,6 +54,11 @@ public class VoucherAdd extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         shape1.setBackground(new java.awt.Color(0, 220, 128));
+        shape1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                shape1MouseClicked(evt);
+            }
+        });
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
@@ -142,9 +152,13 @@ public class VoucherAdd extends javax.swing.JFrame {
         jTextField2.setBackground(new java.awt.Color(196, 196, 196));
 
         jTextField3.setBackground(new java.awt.Color(196, 196, 196));
-        jTextField3.setText("jTextField2");
 
         jTextField4.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
 
         jTextField5.setBackground(new java.awt.Color(196, 196, 196));
 
@@ -295,6 +309,45 @@ public class VoucherAdd extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void shape1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_shape1MouseClicked
+              
+        CheckInfoSale checkInfoSale = new CheckInfoSale();
+        VoucherValidate voucherValidate = new VoucherValidate();
+                
+        
+        String codeVoucher = jTextField1.getText();
+        String minimizeVoucher = jTextField3.getText();
+        String maxmizeVoucher = jTextField2.getText();
+        String startDay = jTextField4.getText();
+        String endDay = jTextField5.getText();
+        String percent = jTextField6.getText();
+        String numberUser = jTextField7.getText();
+        String describe =  jTextArea1.getText();
+        
+        boolean isAccess = checkInfoSale.hasVoucher(codeVoucher);
+//        boolean isCheckCodeVoucher = voucherValidate.checkCodeVoucher(codeVoucher);
+//        boolean isCheckMinimizeVoucher = voucherValidate.checkMinimizeVoucher(minimizeVoucher);
+//        boolean isCheckMaxmizeVoucher = voucherValidate.checkMaxmizeVoucher(maxmizeVoucher);
+//        boolean isCheckPercent = voucherValidate.checkPercent(percent);
+//        boolean isCheckNumberUser = voucherValidate.checkNumberUser(numberUser);
+//        boolean isCheckDescribe = voucherValidate.checkDescribe(describe);
+//        System.out.println(isCheckStartDay);
+        if (!voucherValidate.validateAll(codeVoucher, minimizeVoucher, maxmizeVoucher, startDay, endDay, percent, numberUser, describe)){
+//            Voucher voucher = voucherValidate.getValidatedVoucher();
+                JOptionPane.showMessageDialog(this, "The voucher already exists or illegal");
+        }else {
+            System.out.println("sai");
+            
+            dispose();
+        }
+        
+        
+    }//GEN-LAST:event_shape1MouseClicked
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
 
 
     public static void main(String args[]) {

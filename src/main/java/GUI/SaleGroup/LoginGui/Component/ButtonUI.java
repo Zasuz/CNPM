@@ -53,7 +53,7 @@ public class ButtonUI extends BasicButtonUI {
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
        
         g.setColor(c.getBackground());
-        g.fillRoundRect(0, yOffset, size.width, size.height + yOffset - 5,30,30);
+        g.fillRoundRect(0, yOffset, size.width, size.height ,30,30);
     }
 }
     

@@ -3,9 +3,6 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1080, 626]"/>
-    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -401,7 +398,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="66" red="66" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Duy, Tu&#x1ea5;n, L&#xe2;m, Ph&#xfa;c, &#x110;&#x1ea1;t"/>
+            <Property name="text" type="java.lang.String" value="Duy, Ph&#xfa;c, L&#xe2;m, Tu&#x1ea5;n, &#x110;&#x1ea1;t"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">

@@ -77,7 +77,7 @@ public class PanelAddManageNhanvien extends javax.swing.JPanel {
         setOpaque(false);
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        shape2.setLayout(new java.awt.GridLayout(1, 0));
+        shape2.setLayout(new java.awt.GridLayout());
 
         maSanPham.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         maSanPham.setText("jLabel1");
