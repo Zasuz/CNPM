@@ -398,7 +398,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="66" red="66" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Duy, Ph&#xfa;c, L&#xe2;m, Tu&#x1ea5;n, &#x110;&#x1ea1;t"/>
+            <Property name="text" type="java.lang.String" value="Ph&#xfa;c, L&#xe2;m, Ph&#xfa; , Duy ,Kh&#xf4;i"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
