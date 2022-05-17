@@ -1,10 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
+
 package GUI.ManageGroup.ManageItem.ManagerPanel;
 
-import BUS.BusAccessor.SanPhamBUS;
+
 import DAL.DataModels.SanPham;
 import java.awt.Dimension;
 import java.util.List;
@@ -12,31 +9,15 @@ import javax.swing.BorderFactory;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author huykh
- */
 public class SanPhamPanel extends javax.swing.JPanel {
 
-    /**
-     * Creates new form SanPhamPanel
-     */
+
     public SanPhamPanel() {
         initComponents();
-        SanPhamTable();
+  
     }
-    public void SanPhamTable(){
-        String col [ ]= {" Mã sản phẩm","Tên sản phẩm","Giá tiền","Số lượng"};
-        SanPhamBUS spBUS = new SanPhamBUS();
-        List<SanPham> spList=  spBUS.getAll();
-       DefaultTableModel tableModel = new DefaultTableModel(col,0);
-       jTable1.setModel(tableModel);
-        for(int i=0;i<spList.size()-1;i++){
-            Object[] objs = { spList.get(i).getMaSP(), spList.get(i).getTenSP() , spList.get(i).getGiaTien(),spList.get(i).getSoLuong()};
-            System.out.println(objs);
-            tableModel.addRow(objs);
-    }
-    }
+   
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {

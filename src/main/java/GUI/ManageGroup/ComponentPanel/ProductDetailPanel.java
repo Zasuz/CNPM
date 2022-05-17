@@ -1,24 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
+
 package GUI.ManageGroup.ComponentPanel;
 
-import BUS.BusAccessor.NhaCungCapBUS;
+
 import DAL.DataModels.SanPham;
 
-/**
- *
- * @author huykh
- */
+
 public class ProductDetailPanel extends PanelAdd {
     private SanPham sanpham;
-    private static final NhaCungCapBUS nhaccBus = new NhaCungCapBUS();
-//    private static final MaLoai
-    
-    /**
-     * Creates new form ProductDetailPanel
-     */
+  
+
     public ProductDetailPanel() {
         initComponents();
     }
@@ -26,7 +16,7 @@ public class ProductDetailPanel extends PanelAdd {
     public ProductDetailPanel(SanPham sanpham) {
         initComponents();
         this.sanpham = sanpham;
-        initInfo();
+  
     }
 
     public SanPham getSanpham() {
@@ -35,28 +25,10 @@ public class ProductDetailPanel extends PanelAdd {
 
     public void setSanpham(SanPham sanpham) {
         this.sanpham = sanpham;
-        initInfo();
+
     }
     
-    private void initInfo(){
-        String tenNhaCC = nhaccBus.get(sanpham.getMaNCC()).getTenNCC();
-//        String tenLoai = 
-        imagePanel.setImagePath(sanpham.getHinhAnh());
-        lbName.setText("<html>"+sanpham.getTenSP());
-        lbMaSp.setText(Integer.toString(sanpham.getMaSP()));
-        lbDonGia.setText(Long.toString(sanpham.getGiaTien()));
-        lbLoai.setText(sanpham.getMaLoai()+"");
-        lbSoLuong.setText(sanpham.getSoLuong()+"");
-        lbNhaCC.setText(tenNhaCC);
-        
-        String mota = "<html>"+sanpham.getMoTa();
-        if (mota.length()>270){
-            mota = "<html>" +sanpham.getMoTa().substring(0, 268);
-            mota += "...";
-        }
-        lbMoTa.setText(mota);
-        imagePanel.setToolTipText("<html> <div style='width:200px'>"+sanpham.getMoTa());
-    }
+   
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -80,7 +52,6 @@ public class ProductDetailPanel extends PanelAdd {
         lbLoai = new javax.swing.JLabel();
         lbSoLuong = new javax.swing.JLabel();
         lbNhaCC = new javax.swing.JLabel();
-        imagePanel = new GUI.SaleGroup.SellerGUI.Component.ImagePanel();
 
         setBackground(new java.awt.Color(245, 245, 245));
 
@@ -138,20 +109,6 @@ public class ProductDetailPanel extends PanelAdd {
         lbNhaCC.setForeground(new java.awt.Color(17, 86, 125));
         lbNhaCC.setText("PEPSI INC");
 
-        imagePanel.setBackground(new java.awt.Color(255, 255, 255));
-        imagePanel.setImage(new javax.swing.ImageIcon(getClass().getResource("/Assets/Image/7up.png"))); // NOI18N
-
-        javax.swing.GroupLayout imagePanelLayout = new javax.swing.GroupLayout(imagePanel);
-        imagePanel.setLayout(imagePanelLayout);
-        imagePanelLayout.setHorizontalGroup(
-            imagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 172, Short.MAX_VALUE)
-        );
-        imagePanelLayout.setVerticalGroup(
-            imagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 128, Short.MAX_VALUE)
-        );
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -160,9 +117,7 @@ public class ProductDetailPanel extends PanelAdd {
                 .addGap(190, 190, 190)
                 .addComponent(lbName, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(imagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62)
+                .addGap(240, 240, 240)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel55)
@@ -194,35 +149,30 @@ public class ProductDetailPanel extends PanelAdd {
             .addGroup(layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(lbName)
-                .addGap(6, 6, 6)
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(imagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel55)
-                            .addComponent(lbMaSp)
-                            .addComponent(jLabel54)
-                            .addComponent(lbLoai)
-                            .addComponent(jLabel57)
-                            .addComponent(lbSoLuong))
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel56)
-                            .addComponent(lbDonGia)
-                            .addComponent(jLabel58)
-                            .addComponent(lbNhaCC))
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel59)
-                            .addComponent(lbMoTa, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jLabel55)
+                    .addComponent(lbMaSp)
+                    .addComponent(jLabel54)
+                    .addComponent(lbLoai)
+                    .addComponent(jLabel57)
+                    .addComponent(lbSoLuong))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel56)
+                    .addComponent(lbDonGia)
+                    .addComponent(jLabel58)
+                    .addComponent(lbNhaCC))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel59)
+                    .addComponent(lbMoTa, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private GUI.SaleGroup.SellerGUI.Component.ImagePanel imagePanel;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
